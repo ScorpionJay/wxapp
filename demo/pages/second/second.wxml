@@ -1,3 +1,38 @@
-<view class="container log-list">
-  second
+<view class="page">
+    <view class="page__bd">
+        <view class="section section_gap swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for-items="{{imgUrls}}">
+                    <swiper-item>
+                        <image src="{{item}}" class="slide-image" height="150"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="btn-area">
+            <button type="default" bindtap="changeIndicatorDots">indicator-dots</button>
+            <button type="default" bindtap="changeVertical">{{vertical?'horizontal':'vertical'}}</button>
+            <button type="default" bindtap="changeAutoplay">autoplay</button>
+        </view>
+        <slider bindchange="durationChange" value="{{duration}}" show-value min="500" max="2000"/>
+        <view class="section__title">duration</view>
+        <slider bindchange="intervalChange" value="{{interval}}" show-value min="2000" max="10000"/>
+        <view class="section__title">interval</view>
+    </view>
+</view>
+
+
+<view class="container">
+
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>-->
+  <view class="usermotto" bindtap="bindViewTap">
+    <View class='img'>
+      <image src='https://avatars0.githubusercontent.com/u/8603342?v=3&u=d5c989c2b7f53d84c60542d354d7a75a89d9e114&s=140' />
+    </View> 
+    <text class="user-motto">{{motto}}</text>
+  </view>
 </view>

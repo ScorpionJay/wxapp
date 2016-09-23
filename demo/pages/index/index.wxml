@@ -1,13 +1,23 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto" bindtap="bindViewTap">
-    <View class='img'>
-      <image src='https://avatars0.githubusercontent.com/u/8603342?v=3&u=d5c989c2b7f53d84c60542d354d7a75a89d9e114&s=140' />
-    </View> 
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!-- swiper -->
+<swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for-items="{{imgUrls}}">
+        <swiper-item  bindtap="bindViewTap">
+            <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+    </block>
+</swiper>
+
+
+<!-- list -->
+<View class="items">
+    <block wx:for-items="{{items}}">
+        <view style="background-image: url('http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg');background-size:cover "> 
+            {{item}} 
+        </view>
+    </block>
+</View>
+
+
+
+
+
