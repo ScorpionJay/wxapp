@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.movie {
+ margin:0rpx 20rpx;
+ padding:10rpx;
+ display: flex;
+ flex-direction: row;
+ border-bottom: 1rpx #BBBBBB solid;
+}
+
+.movie .img {
+  width:120rpx;
+  height: 160rpx;
+}
+
+.movie .content {
+  display: flex;
+  flex-direction: column;
+  margin-left:0.5rem;
+}
+
+.movie .content .nm {
+  font-size: 30rpx;
+  font-weight: blod;
+  color: #3E3E3E;
+}
+
+.movie .content .sc {
+  font-size: 30rpx;
+  color:#ECC434;
+}
+.movie .content .gz {
+  font-size: 20rpx;
+  color:#BBBBBB;
+}
+
+.scm {
+  font-size: 22rpx;
+  color:#6A6A6A;
+  padding-top:10rpx; 
+  
+}
+
+.showInfo {
+  font-size: 25rpx;
+  color:#6A6A6A;
+  padding-top:10rpx; 
+}
+
+
+

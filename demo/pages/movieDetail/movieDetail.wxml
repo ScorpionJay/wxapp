@@ -1,0 +1,9 @@
+<view>
+    <text>{{movie.MovieDetailModel.nm}}</text>
+</view>
+<view>
+    <text>{{movie.MovieDetailModel.dra}}</text>
+</view>
+
+<image src="{{movie.MovieDetailModel.img}}" />
+

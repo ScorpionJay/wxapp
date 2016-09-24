@@ -1,9 +1,12 @@
 {
   "pages":[
+     "pages/movie/movie",
     "pages/index/index",
+   
     "pages/logs/logs",
     "pages/me/me",
-    "pages/second/second"
+    "pages/second/second",
+    "pages/movieDetail/movieDetail"
   ],
   "window":{
     "navigationBarTextStyle": "black",
@@ -22,10 +25,10 @@
       "selectedIconPath": "image/wechatHL.png",
       "text": "首页"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/movie/movie",
       "iconPath": "image/wechat.png",
       "selectedIconPath": "image/wechatHL.png",
-      "text": "发现"
+      "text": "电影"
     }, {
       "pagePath": "pages/me/me",
       "iconPath": "image/wechat.png",
