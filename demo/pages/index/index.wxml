@@ -1,8 +1,8 @@
 <!-- swiper -->
 <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for-items="{{imgUrls}}">
-        <swiper-item  bindtap="bindViewTap">
-            <image src="{{item}}" class="slide-image" />
+        <swiper-item  bindtap="bindViewTap"  data-id="{{item.id}}">
+            <image src="{{item.img}}" class="slide-image" />
         </swiper-item>
     </block>
 </swiper>
@@ -11,7 +11,7 @@
 <!-- list -->
 <View class="items">
     <block wx:for-items="{{items}}">
-        <view style="background-image: url('http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg');background-size:cover "> 
+        <view style="background-image: url('http://onejay.top/bg.jpg');background-size:cover "> 
             {{item}} 
         </view>
     </block>

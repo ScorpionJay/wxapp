@@ -4,9 +4,9 @@ var app = getApp()
 Page({
   data: {
     imgUrls: [
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      {id:1,img:'http://onejay.top/images/1.jpg'},
+      {id:2,img:'http://onejay.top/images/2.jpg'},
+      {id:3,img:'http://onejay.top/images/3.jpg'}
     ],
     indicatorDots: true,
     autoplay: true,
@@ -15,13 +15,20 @@ Page({
     items:["a","b","c","d","e","f","g","h","i","a","b","c","d","e","f","g","h","i"]
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function(e) {
+    console.log(e)
+    console.log(e.currentTarget)
+    console.log(e.currentTarget.dataset.id)
+    id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '../second/second'
+      url: '../second/second?id=' + id
     })
   },
+  
   onLoad: function () {
     console.log('onLoad')
+    console.log(this)
+   
     var that = this
   	//调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){

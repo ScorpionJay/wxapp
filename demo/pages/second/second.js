@@ -11,29 +11,13 @@ Page({
         interval: 3000,
         duration: 1000
     },
-    changeIndicatorDots: function (e) {
-        this.setData({
-            indicatorDots: !this.data.indicatorDots
-        })
-    },
-    changeVertical: function (e) {
-        this.setData({
-            vertical: !this.data.vertical
-        })
-    },
-    changeAutoplay: function (e) {
-        this.setData({
-            autoplay: !this.data.autoplay
-        })
-    },
-    intervalChange: function (e) {
-        this.setData({
-            interval: e.detail.value
-        })
-    },
-    durationChange: function (e) {
-        this.setData({
-            duration: e.detail.value
-        })
+
+    onLoad: function (e) {
+        console.log('onLoad')
+        var that = this
+        console.log(e)
+
     }
+
+    
 })
