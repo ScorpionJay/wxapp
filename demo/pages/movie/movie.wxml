@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class="container">
   <block wx:for-items="{{movies}}">
         <view class="movie" bindtap="bindViewTap" data-id="{{item.id}}"> 

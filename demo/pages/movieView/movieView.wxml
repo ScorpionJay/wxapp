@@ -1,0 +1,3 @@
+<view class="video">
+  <video src="{{url}}" binderror="videoErrorCallback"></video>
+</view>

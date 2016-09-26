@@ -1,7 +1,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello WeApp me',
+    motto: 'Hello WeApp',
     userInfo: {}
   },
   onButtonTap: function() {

@@ -1,9 +1,35 @@
-<view>
-    <text>{{movie.MovieDetailModel.nm}}</text>
-</view>
-<view>
-    <text>{{movie.MovieDetailModel.dra}}</text>
+<view class="top">
+    <view class="up">
+        <view bindtap="tapmovie" data-url="{{movie.MovieDetailModel.vd}}">
+            <image src="{{movie.MovieDetailModel.img}}" class="img"/>
+        </view>
+        <view class="upRight">
+             <text class="nm">{{movie.MovieDetailModel.nm}}</text>
+             
+             <text class="sc">{{movie.MovieDetailModel.sc}}</text>
+             <text class="snum">({{movie.MovieDetailModel.snum}}评分)</text>
+             
+             <text class="des">{{movie.MovieDetailModel.cat}} {{movie.MovieDetailModel.ver}}</text>
+             <text class="des">{{movie.MovieDetailModel.src}}/{{movie.MovieDetailModel.dur}}分钟</text>
+             <text class="des">{{movie.MovieDetailModel.rt}}</text>
+        </view>
+    </view>
+    <view class="down">
+        <button bindtap="tapWant" >想看</button>
+        <button bindtap="tapScore">评分</button>
+    </view>
 </view>
 
-<image src="{{movie.MovieDetailModel.img}}" />
+<toast hidden="{{toastHidden}}" bindchange="toastChange">
+    开发中
+</toast>
+
+
+<view class="dra">
+    <text>{{movie.MovieDetailModel.dra}}</text>
+</view>  
+
+
+
+
 

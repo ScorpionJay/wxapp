@@ -1,12 +1,12 @@
 {
   "pages":[
-     "pages/movie/movie",
     "pages/index/index",
-   
+    "pages/movie/movie",
     "pages/logs/logs",
     "pages/me/me",
     "pages/second/second",
-    "pages/movieDetail/movieDetail"
+    "pages/movieDetail/movieDetail",
+    "pages/movieView/movieView"
   ],
   "window":{
     "navigationBarTextStyle": "black",
