@@ -13,6 +13,9 @@
 2. [小程序设计指南](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
 3. [小程序开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)
 
+## demo演示
+
+![demo](demo2.gif)
 
 ##其他
 
