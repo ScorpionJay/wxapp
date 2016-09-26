@@ -2,13 +2,13 @@
  <input placeholder="找音乐" ><icon type="search" size="20"/></input>
 </view>
 
-
 <view class="container">
   <block wx:for-items="{{list}}">
-        <view>
-        {{item.songname}}
-        {{item.singername}}
-        {{item.hash}}
+        <view class="item" bindtap='playMusic' data-src="{{item.hash}}">
+            {{item.songname}}
+            {{item.singername}}
         </view>
     </block>
 </view>
+
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>

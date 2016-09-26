@@ -4,7 +4,10 @@ Page({
     poster: 'http://pic.pimg.tw/pam86591/1408719752-3322564110_n.jpg',
     name: 'Sugar',
     author: 'Maroon 5',
-    src:'http://qqma.tingge123.com:823/mp3/2015-06-13/1434188181.mp3'
+    src:'',
+    action:{
+        method: 'play'
+      }
   },
   audioPlay: function () {
     this.setData({
@@ -31,6 +34,25 @@ Page({
         console.log(res.data.data.info)
         that.setData({'list':res.data.data.info})
         that.update()
+      }
+    })
+  },
+  playMusic: function(e){
+    let src = 'http://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash='+e.currentTarget.dataset.src
+    var that = this
+    // 发起请求
+    wx.request({
+      url: src,
+      success: function(res) {
+        console.log(res.data)
+        that.setData({
+            src:res.data.url
+        })
+        that.setData({
+          action: {
+            method: 'play'
+          }
+         })
       }
     })
   }
