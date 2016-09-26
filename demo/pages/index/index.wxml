@@ -11,8 +11,8 @@
 <!-- list -->
 <View class="items">
     <block wx:for-items="{{items}}">
-        <view style="background-image: url('http://onejay.top/bg.jpg');background-size:cover "> 
-            {{item}} 
+        <view style="background-image: url('http://onejay.top/bg.jpg');background-size:cover;border-radius:0% " bindtap="tapLink" data-url="{{item.url}}"> 
+            {{item.name}} 
         </view>
     </block>
 </View>

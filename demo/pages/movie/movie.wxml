@@ -1,3 +1,8 @@
+<!--<view class="search">
+ <input placeholder="找影视剧、影人、影院" ><icon type="search" size="20"/></input>
+</view>-->
+
+
 <view class="container">
   <block wx:for-items="{{movies}}">
         <view class="movie" bindtap="bindViewTap" data-id="{{item.id}}"> 

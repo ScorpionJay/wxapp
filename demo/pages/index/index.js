@@ -12,7 +12,14 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 100,
-    items:["a","b","c","d","e","f","g","h","i","a","b","c","d","e","f","g","h","i"]
+    items:[
+      {name:"电影",url:"../movie/movie"},
+      {name:"地图",url:"../map/map"},
+      {name:"音乐",url:"../music/music"},
+      {name:"电影",url:"../movie/moive"},
+      {name:"电影",url:"../movie/moive"},
+      {name:"电影",url:"../movie/moive"}
+    ]
   },
   //事件处理函数
   bindViewTap: function(e) {
@@ -37,6 +44,15 @@ Page({
         userInfo:userInfo
       })
       that.update()
+    })
+  },
+  tapLink: function(e) {
+    console.log(e)
+    console.log(e.currentTarget)
+    console.log(e.currentTarget.dataset.url)
+    id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: e.currentTarget.dataset.url
     })
   }
 })

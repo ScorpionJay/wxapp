@@ -2,11 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/movie/movie",
+    "pages/music/music",
     "pages/logs/logs",
     "pages/me/me",
     "pages/second/second",
     "pages/movieDetail/movieDetail",
-    "pages/movieView/movieView"
+    "pages/movieView/movieView",
+    "pages/map/map",
+    "pages/audio/audio"
+    
   ],
   "window":{
     "navigationBarTextStyle": "black",
