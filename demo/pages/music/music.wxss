@@ -5,6 +5,10 @@
   padding:8rpx 30rpx;
   border:2rpx #BBBBBB solid;
   font-size:25rpx;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
 }
 
 
@@ -12,6 +16,8 @@
   display: flex;
   flex-direction: column;
   padding:5rpx 20rpx;
+  margin-top: 60rpx;
+  margin-bottom: 100rpx;
 }
 
 .item {
@@ -19,4 +25,11 @@
   padding:20rpx;
 }
 
-
+.audio audio {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right:0;
+  text-align:center;
+  background: #fff;
+}

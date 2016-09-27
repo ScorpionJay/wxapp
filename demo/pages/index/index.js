@@ -14,8 +14,8 @@ Page({
     duration: 100,
     items:[
       {name:"电影",url:"../movie/movie"},
-      {name:"地图",url:"../map/map"},
       {name:"音乐",url:"../music/music"},
+      {name:"地图",url:"../map/map"},
       {name:"电影",url:"../movie/moive"},
       {name:"电影",url:"../movie/moive"},
       {name:"电影",url:"../movie/moive"}

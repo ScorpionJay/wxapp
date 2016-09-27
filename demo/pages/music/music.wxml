@@ -1,14 +1,16 @@
 <view class="search">
- <input placeholder="找音乐" ><icon type="search" size="20"/></input>
+ <input placeholder="找音乐" bindinput="search" ><icon type="search" size="20" bindtap="tapSearch"/></input>
 </view>
 
 <view class="container">
   <block wx:for-items="{{list}}">
-        <view class="item" bindtap='playMusic' data-src="{{item.hash}}">
+        <view class="item" bindtap='playMusic' data-hash="{{ item.hash }}" data-songname="{{ item.songname }}" data-singername="{{ item.singername }}">
             {{item.songname}}
             {{item.singername}}
         </view>
     </block>
 </view>
 
-<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>
+<view class="audio">
+    <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>
+</view>

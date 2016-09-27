@@ -7,7 +7,8 @@ Page({
     src:'',
     action:{
         method: 'play'
-      }
+    },
+    keyword:''
   },
   audioPlay: function () {
     this.setData({
@@ -37,8 +38,28 @@ Page({
       }
     })
   },
+  search: function(e){
+    console.log('1111',e.detail.value)
+   this.setData({
+      keyword: e.detail.value
+    })
+  },
+  tapSearch: function(){
+     console.log('search...')
+     var that = this
+    // 发起请求
+    wx.request({
+      url: 'http://mobilecdn.kugou.com/api/v3/search/song?keyword=' + this.data.keyword,
+      success: function(res) {
+        console.log(res.data.data.info)
+        that.setData({'list':res.data.data.info})
+        that.update()
+      }
+    })
+  },
   playMusic: function(e){
-    let src = 'http://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash='+e.currentTarget.dataset.src
+
+    let src = 'http://m.kugou.com/app/i/getSongInfo.php?cmd=playInfo&hash='+e.currentTarget.dataset.hash
     var that = this
     // 发起请求
     wx.request({
@@ -46,7 +67,9 @@ Page({
       success: function(res) {
         console.log(res.data)
         that.setData({
-            src:res.data.url
+            src:res.data.url,
+            name: e.currentTarget.dataset.songname,
+            author: e.currentTarget.dataset.singername,
         })
         that.setData({
           action: {

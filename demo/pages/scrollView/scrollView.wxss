@@ -1,0 +1,26 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    background-color: red;
+}
+
+.search {
+     flex:1
+}
+
+.list {
+     flex:9;
+}
+
+.list .scrollView {
+    height: 700px;
+}
+
+.audio {
+     flex:1
+}
+
+.scroll-view-item {
+    height: 100rpx;
+}
