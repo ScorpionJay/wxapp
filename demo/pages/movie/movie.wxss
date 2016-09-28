@@ -7,12 +7,21 @@
   font-size:25rpx;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
- 
+  height:100%;
 }
+
+.list {
+    flex:1;
+    display: flex;
+}
+
+.scrollView {
+    flex:1;
+}
+
 
 .movie {
  margin:0rpx 20rpx;
@@ -60,6 +69,7 @@
   color:#6A6A6A;
   padding-top:10rpx; 
 }
+
 
 
 

@@ -16,7 +16,7 @@ Page({
       {name:"电影",url:"../movie/movie"},
       {name:"音乐",url:"../music/music"},
       {name:"地图",url:"../map/map"},
-      {name:"电影",url:"../movie/moive"},
+      {name:"滚动",url:"../scrollView/scrollView"},
       {name:"电影",url:"../movie/moive"},
       {name:"电影",url:"../movie/moive"}
     ]

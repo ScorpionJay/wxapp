@@ -9,7 +9,8 @@
     "pages/movieDetail/movieDetail",
     "pages/movieView/movieView",
     "pages/map/map",
-    "pages/audio/audio"
+    "pages/audio/audio",
+    "pages/scrollView/scrollView"
     
   ],
   "window":{

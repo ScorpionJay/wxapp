@@ -10,7 +10,7 @@ Page({
     console.log(e)
   },
   scroll: function(e) {
-    console.log(e)
+    //console.log(e)
   },
   tap: function(e) {
     for (var i = 0; i < order.length; ++i) {

@@ -1,10 +1,24 @@
 <view class="section">
-  <view class="search">vertical scroll</view>
+
   <view class="list">
-      <scroll-view scroll-y="true" class="scrollView" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <scroll-view scroll-y="true" class="scrollView" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
           <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
-         
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
       </scroll-view>
   </view>
-  <view class="audio">vertical scroll</view>
+
 </view>

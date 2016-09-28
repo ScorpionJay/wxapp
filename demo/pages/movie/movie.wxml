@@ -4,18 +4,22 @@
 
 
 <view class="container">
-  <block wx:for-items="{{movies}}">
-        <view class="movie" bindtap="bindViewTap" data-id="{{item.id}}"> 
-            <image src="{{item.img}}" class="img" />
-            <view class="content">
-                <text class="nm">{{item.nm}} </text>
-                <view> 
-                    <text class="gz">观众</text> 
-                    <text class="sc">{{item.sc}}</text>
-                 </view>
-                <text class="scm">{{item.scm}} </text>
-                <text class="showInfo">{{item.showInfo}} </text>
-            </view>
-        </view>
-    </block>
+    <view class="list">
+        <scroll-view scroll-y="true" class="scrollView" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+            <block wx:for-items="{{movies}}">
+                    <view class="movie" bindtap="bindViewTap" data-id="{{item.id}}"> 
+                        <image src="{{item.img}}" class="img" />
+                        <view class="content">
+                            <text class="nm">{{item.nm}} </text>
+                            <view> 
+                                <text class="gz">观众</text> 
+                                <text class="sc">{{item.sc}}</text>
+                            </view>
+                            <text class="scm">{{item.scm}} </text>
+                            <text class="showInfo">{{item.showInfo}} </text>
+                        </view>
+                    </view>
+                </block>
+        </scroll-view> 
+    </view>
 </view>

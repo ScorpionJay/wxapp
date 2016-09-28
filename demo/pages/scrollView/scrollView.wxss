@@ -5,21 +5,18 @@
     background-color: red;
 }
 
-.search {
-     flex:1
-}
+
 
 .list {
-     flex:9;
+    flex:1;
+    display: flex;
 }
 
 .list .scrollView {
-    height: 700px;
+    flex:1;
 }
 
-.audio {
-     flex:1
-}
+
 
 .scroll-view-item {
     height: 100rpx;
