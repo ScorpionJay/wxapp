@@ -3,20 +3,22 @@
 }
 
 .items {
-  margin-top: 15rpx;
+  margin-top: 30rpx;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap ;
+  padding:20rpx;
 }
 
 .items View {
-  width: 220rpx;
-  height:220rpx;
+  width: 150rpx;
+  height:150rpx;
   margin-top: 10rpx;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40rpx;
-  color:red;
+  color:#fff;
+  border-radius:100%;
 }
 

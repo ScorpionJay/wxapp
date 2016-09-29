@@ -13,8 +13,6 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     var that = this
-  	
-
 
     // 发起请求
     wx.request({

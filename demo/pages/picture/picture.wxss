@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.container button {
+    width: 100%;
+}
+.list {
+    flex:1;
+    display: flex;
+}
+
+.scrollView {
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.itemImg {
+    width: 350rpx;
+    height: 400rpx;
+    margin-bottom:20rpx;
+    border: 2rpx #aaa solid;
+    padding: 10rpx;
+}
+
+.showImg {
+    position: fixed;
+    background-color: red;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+.checked {
+    color: red
+}
+

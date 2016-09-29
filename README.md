@@ -1,6 +1,5 @@
 # wxapp
 
-![](logo.png)
 
 微信小程序学习
 
@@ -15,10 +14,5 @@
 
 ## demo演示
 
-![demo](demo2.gif)
+![demo](demo.gif)
 
-##其他
-
-- [ide](https://github.com/gavinkwoe/weapp-ide-crack)
-
-- [文档](http://wxopen.notedown.cn)

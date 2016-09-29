@@ -10,8 +10,8 @@
     "pages/movieView/movieView",
     "pages/map/map",
     "pages/audio/audio",
-    "pages/scrollView/scrollView"
-    
+    "pages/scrollView/scrollView",
+    "pages/picture/picture"
   ],
   "window":{
     "navigationBarTextStyle": "black",

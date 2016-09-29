@@ -1,0 +1,19 @@
+<view class="container" >
+    <button  type="default" bindtap="actionSheetTap">类别</button>
+    <view class="list">
+        <scroll-view scroll-y="true" class="scrollView"  bindscrolltolower="lower"  scroll-top="{{scrollTop}}">
+            <block wx:for-items="{{list}}">
+                <image class="itemImg" src="{{'http://tnfs.tngou.net/img/'+item.img}}" bindtap="showImg" data-url="{{'http://tnfs.tngou.net/img/'+item.img}}" />
+            </block>
+        </scroll-view>
+    </view>
+</view>
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <block wx:for="{{actionSheetItems}}">
+    <action-sheet-item class="{{item.id == id ? 'checked' : ''}}" bindtap="bindItemTap" data-id="{{item.id}}">{{item.name}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+
+<image src="{{showUrl}}"  wx:if="{{!showImgHidden}}" class="showImg" bindtap="hideShowImg" />

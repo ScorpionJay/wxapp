@@ -1,7 +1,7 @@
 <!-- swiper -->
 <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for-items="{{imgUrls}}">
-        <swiper-item  bindtap="bindViewTap"  data-id="{{item.id}}">
+        <swiper-item  bindtap="bindViewTap"  data-link="{{item.link}}">
             <image src="{{item.img}}" class="slide-image" />
         </swiper-item>
     </block>
@@ -11,7 +11,7 @@
 <!-- list -->
 <View class="items">
     <block wx:for-items="{{items}}">
-        <view style="background-image: url('http://onejay.top/bg.jpg');background-size:cover;border-radius:0% " bindtap="tapLink" data-url="{{item.url}}"> 
+        <view style="background-color:{{item.color}}" bindtap="tapLink" data-url="{{item.url}}"> 
             {{item.name}} 
         </view>
     </block>

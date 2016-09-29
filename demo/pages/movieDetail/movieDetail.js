@@ -10,21 +10,21 @@ Page({
         console.log(e)
 
         wx.request({
-        url: 'http://m.maoyan.com/movie/'+ e.id +'.json',
-        header: {
-            'Content-Type': 'application/json'
-        },
-        success: function(res) {
-            console.log(res.data)
+            url: 'http://m.maoyan.com/movie/'+ e.id +'.json',
+            header: {
+                'Content-Type': 'application/json'
+            },
+            success: function(res) {
+                console.log(res.data)
 
-            let str = res.data.data.MovieDetailModel.dra
-            str = str.substring(3)
-            str = str.substring( 0,str.length -4 )
-            res.data.data.MovieDetailModel.dra = str
+                let str = res.data.data.MovieDetailModel.dra
+                str = str.substring(3)
+                str = str.substring( 0,str.length -4 )
+                res.data.data.MovieDetailModel.dra = str
 
-            that.setData({'movie':res.data.data})
-            that.update()
-        }
+                that.setData({'movie':res.data.data})
+                that.update()
+            }
         })
     },
 
