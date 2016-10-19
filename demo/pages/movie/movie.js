@@ -28,7 +28,7 @@ Page({
     })
   },
   bindViewTap: function(e) {
-    id = e.currentTarget.dataset.id
+    var id = e.currentTarget.dataset.id
     wx.navigateTo({
       url: '../movieDetail/movieDetail?id=' + id
     })

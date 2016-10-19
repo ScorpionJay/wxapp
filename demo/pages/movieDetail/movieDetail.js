@@ -43,7 +43,7 @@ Page({
         console.log(e)
         console.log(e.currentTarget)
         console.log(e.currentTarget.dataset.url)
-        url = e.currentTarget.dataset.url
+        var url = e.currentTarget.dataset.url
         wx.navigateTo({
         url: '../movieView/movieView?url=' + url
         })

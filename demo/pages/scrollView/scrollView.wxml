@@ -18,6 +18,9 @@
           <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
           <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
           <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
+          <view id="green" class="scroll-view-item bc_green" style="background-color:green">111</view>
       </scroll-view>
   </view>
 

@@ -50,7 +50,7 @@ Page({
     console.log(e)
     console.log(e.currentTarget)
     console.log(e.currentTarget.dataset.url)
-    id = e.currentTarget.dataset.id
+    // id = e.currentTarget.dataset.id
     wx.navigateTo({
       url: e.currentTarget.dataset.url
     })
